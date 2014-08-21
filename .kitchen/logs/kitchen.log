@@ -1,0 +1,119 @@
+I, [2014-08-21T17:30:56.061316 #2205]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-08-21T17:30:56.064708 #2205] ERROR -- Kitchen: ------Exception-------
+E, [2014-08-21T17:30:56.064785 #2205] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-08-21T17:30:56.064827 #2205] ERROR -- Kitchen: Message: Error parsing /Users/matt/devops/personal/assesment/de1/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2014-08-21T17:30:56.064868 #2205] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-08-21T17:30:56.064894 #2205] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2014-08-21T17:30:56.064917 #2205] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 21 column 3
+E, [2014-08-21T17:30:56.064940 #2205] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-08-21T17:30:56.064962 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:211:in `rescue in parse_yaml_string'
+E, [2014-08-21T17:30:56.064990 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:200:in `parse_yaml_string'
+E, [2014-08-21T17:30:56.065057 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:113:in `yaml'
+E, [2014-08-21T17:30:56.065080 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:105:in `combined_hash'
+E, [2014-08-21T17:30:56.065103 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2014-08-21T17:30:56.065125 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:78:in `data'
+E, [2014-08-21T17:30:56.065147 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:66:in `suites'
+E, [2014-08-21T17:30:56.065169 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:90:in `filter_instances'
+E, [2014-08-21T17:30:56.065192 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-08-21T17:30:56.065214 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-08-21T17:30:56.065239 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-08-21T17:30:56.065262 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-08-21T17:30:56.065285 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-08-21T17:30:56.065307 #2205] ERROR -- Kitchen: /Users/matt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-08-21T17:30:56.065330 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-08-21T17:30:56.065353 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-08-21T17:30:56.065379 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-08-21T17:30:56.065408 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-08-21T17:30:56.065433 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-08-21T17:30:56.065456 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-08-21T17:30:56.065479 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-08-21T17:30:56.065519 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-08-21T17:30:56.065544 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-08-21T17:30:56.065566 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-08-21T17:30:56.065589 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-08-21T17:30:56.065697 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `load'
+E, [2014-08-21T17:30:56.065737 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-08-21T17:30:56.065764 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-08-21T17:30:56.065791 #2205] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-08-21T17:30:56.065814 #2205] ERROR -- Kitchen: ----------------------
+I, [2014-08-21T17:31:48.605100 #2239]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-08-21T17:31:48.607082 #2239] ERROR -- Kitchen: ------Exception-------
+E, [2014-08-21T17:31:48.607125 #2239] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-08-21T17:31:48.607150 #2239] ERROR -- Kitchen: Message: Error parsing /Users/matt/devops/personal/assesment/de1/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2014-08-21T17:31:48.607173 #2239] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-08-21T17:31:48.607196 #2239] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2014-08-21T17:31:48.607218 #2239] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 21 column 3
+E, [2014-08-21T17:31:48.607250 #2239] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-08-21T17:31:48.607271 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:211:in `rescue in parse_yaml_string'
+E, [2014-08-21T17:31:48.607293 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:200:in `parse_yaml_string'
+E, [2014-08-21T17:31:48.607325 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:113:in `yaml'
+E, [2014-08-21T17:31:48.607348 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:105:in `combined_hash'
+E, [2014-08-21T17:31:48.607370 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2014-08-21T17:31:48.607393 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:78:in `data'
+E, [2014-08-21T17:31:48.607415 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:66:in `suites'
+E, [2014-08-21T17:31:48.607481 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:90:in `filter_instances'
+E, [2014-08-21T17:31:48.607505 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-08-21T17:31:48.607528 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-08-21T17:31:48.607550 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-08-21T17:31:48.607572 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-08-21T17:31:48.607595 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-08-21T17:31:48.607636 #2239] ERROR -- Kitchen: /Users/matt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-08-21T17:31:48.607661 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-08-21T17:31:48.607684 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-08-21T17:31:48.607707 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-08-21T17:31:48.607730 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-08-21T17:31:48.607752 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-08-21T17:31:48.607775 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-08-21T17:31:48.607798 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-08-21T17:31:48.607820 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-08-21T17:31:48.607843 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-08-21T17:31:48.607865 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-08-21T17:31:48.607888 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-08-21T17:31:48.607910 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `load'
+E, [2014-08-21T17:31:48.607932 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-08-21T17:31:48.607963 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-08-21T17:31:48.607985 #2239] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-08-21T17:31:48.608006 #2239] ERROR -- Kitchen: ----------------------
+I, [2014-08-21T17:33:47.449830 #2269]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-08-21T17:33:47.451774 #2269] ERROR -- Kitchen: ------Exception-------
+E, [2014-08-21T17:33:47.451818 #2269] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-08-21T17:33:47.451844 #2269] ERROR -- Kitchen: Message: Error parsing /Users/matt/devops/personal/assesment/de1/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2014-08-21T17:33:47.451867 #2269] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-08-21T17:33:47.451892 #2269] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2014-08-21T17:33:47.451916 #2269] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 21 column 3
+E, [2014-08-21T17:33:47.451938 #2269] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-08-21T17:33:47.451970 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:211:in `rescue in parse_yaml_string'
+E, [2014-08-21T17:33:47.451991 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:200:in `parse_yaml_string'
+E, [2014-08-21T17:33:47.452012 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:113:in `yaml'
+E, [2014-08-21T17:33:47.452033 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:105:in `combined_hash'
+E, [2014-08-21T17:33:47.452054 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2014-08-21T17:33:47.452096 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:78:in `data'
+E, [2014-08-21T17:33:47.452165 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:66:in `suites'
+E, [2014-08-21T17:33:47.452188 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:90:in `filter_instances'
+E, [2014-08-21T17:33:47.452209 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-08-21T17:33:47.452230 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-08-21T17:33:47.452251 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-08-21T17:33:47.452272 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-08-21T17:33:47.452293 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-08-21T17:33:47.452314 #2269] ERROR -- Kitchen: /Users/matt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-08-21T17:33:47.452335 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-08-21T17:33:47.452359 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-08-21T17:33:47.452380 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-08-21T17:33:47.452401 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-08-21T17:33:47.452422 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-08-21T17:33:47.452442 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-08-21T17:33:47.452463 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-08-21T17:33:47.452483 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-08-21T17:33:47.452504 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-08-21T17:33:47.452525 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-08-21T17:33:47.452549 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-08-21T17:33:47.452570 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `load'
+E, [2014-08-21T17:33:47.452590 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-08-21T17:33:47.452611 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-08-21T17:33:47.452632 #2269] ERROR -- Kitchen: /Users/matt/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-08-21T17:33:47.452695 #2269] ERROR -- Kitchen: ----------------------
+I, [2014-08-21T17:34:29.675892 #2280]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-08-21T17:34:30.679257 #2280]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...

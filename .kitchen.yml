@@ -1,6 +1,6 @@
 ---
 driver:
-name: vagrant
+  name: vagrant
 driver_config:
   require_chef_omnibus: true
 
@@ -15,10 +15,9 @@ provisioner:
         passwordless: true
 
 platforms:
-  - name: ubuntu-12.04
+  - name: ubuntu-14.04
 
 suites:
   - name: default  
-  run_list:
-    - recipe[webhead]
-  attributes:
+    run_list:
+      - recipe[webhead]
